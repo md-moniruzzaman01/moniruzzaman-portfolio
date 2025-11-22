@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import heroImage from "../../../assets/monirzzaman.png";
+import heroImage from "../../../assets/monirzzaman.png"; // Renamed image for SEO
 import Image from "next/image";
 import Button from "@components/Button";
 
@@ -16,29 +16,29 @@ const Hero = () => {
             <div className="space-y-4">
               {/* Refined greeting */}
               <p className="text-primary text-xl font-display tracking-widest uppercase">
-                Hello, I'm
+                Hello, I'm Mohamad Yousuf, your
               </p>
-              {/* IMPACT: Clear, bold, and uses the text-gradient */}
+              {/* H1: PRIMARY KEYWORD TARGET */}
               <h1 className="text-6xl md:text-8xl font-display font-extrabold leading-tight">
-                Md <span className="text-gradient">Yousuf</span>
+                <span className="text-gradient">NYC</span> Web Developer
               </h1>
-              {/* VALUE PROPOSITION: Focuses on the outcome */}
+              {/* H2: VALUE PROPOSITION + KEYWORD */}
               <h2 className="text-3xl md:text-5xl font-display text-muted-foreground pt-1">
-                A Full-Stack Web Developer
+                Next.js & React Solutions for **Small Business Growth**.
               </h2>
             </div>
 
-            {/* PUNCHY DESCRIPTION: Shortened and outcome-focused */}
+            {/* PUNCHY DESCRIPTION: Infuses location, tech, and audience */}
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              I specialize in building high-performing, user-centric web applications and digital experiences that drive measurable business growth.
+              I specialize in building **high-performance, SEO-optimized websites** for small businesses across **New York City**. Let's transform your online presence into a powerful, customer-generating asset.
             </p>
 
-            {/* CALL TO ACTION (CTA) */}
+            {/* CTA: Stronger conversion hook */}
             <Button
               primary
               className="group button-gradient hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-smooth"
             >
-              Explore My Work
+              Start Your Free Project Assessment
               <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
@@ -53,7 +53,7 @@ const Hero = () => {
               <Image
                 src={heroImage}
                 // IMPROVED ALT: Specific and descriptive for accessibility/SEO
-                alt="Professional portrait of Md Yousuf, a Full-Stack Web Developer"
+                alt="Mohamad Yousuf, a full-stack Next.js and React web developer serving NYC small businesses"
                 className="w-full h-[600px] object-cover"
                 // Added a subtle border for definition
               />

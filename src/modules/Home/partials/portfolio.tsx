@@ -5,38 +5,40 @@ import { ArrowRight } from "lucide-react";
 import Button from "@components/Button";
 import GlassCard from "@components/Card";
 
-const categories = ["All", "Adobe", "Figma", "Webflow", "Javascript"];
+// UPDATED CATEGORIES: Focus on business-centric project types
+const categories = ["All", "E-commerce Stores", "Service Websites", "SaaS & Dashboards", "Next.js Projects"];
 
 const projects = [
+  // Localized Project Examples
   {
-    title: "SaaS Website Design",
-    category: "Adobe",
-    description: "Modern SaaS platform design with intuitive user experience",
+    title: "Brooklyn E-commerce Platform",
+    category: "E-commerce Stores",
+    description: "High-performance online store built with Next.js/Stripe for a Brooklyn-based retailer. 35% speed increase.",
   },
   {
-    title: "Business Analytics Dashboard",
-    category: "Figma",
-    description: "Comprehensive analytics dashboard for business intelligence",
+    title: "Manhattan Law Firm Website",
+    category: "Service Websites",
+    description: "Professional, SEO-optimized service website for a Manhattan law firm, increasing lead generation by 40%.",
   },
   {
-    title: "E-commerce Platform",
-    category: "Webflow",
-    description: "Full-featured online store with seamless checkout experience",
+    title: "SaaS Dashboard Redesign",
+    category: "SaaS & Dashboards",
+    description: "React-based business analytics dashboard providing real-time data insights for a growing tech startup.",
   },
   {
-    title: "Mobile Banking App",
-    category: "Javascript",
-    description: "Secure and user-friendly mobile banking application",
+    title: "Queens Local Restaurant Site",
+    category: "Service Websites",
+    description: "Mobile-first, fully responsive website for a Queens restaurant, implementing online reservations and menu updates.",
   },
   {
-    title: "Portfolio Website",
-    category: "Webflow",
-    description: "Creative portfolio showcasing design work and projects",
+    title: "Next.js Portfolio for Architect",
+    category: "Next.js Projects",
+    description: "Blazing fast, dynamic portfolio site for an NYC architect, achieving a perfect Lighthouse score.",
   },
   {
-    title: "Marketing Landing Page",
-    category: "Adobe",
-    description: "High-converting landing page for marketing campaigns",
+    title: "Financial Services Landing Page",
+    category: "Service Websites",
+    description: "High-converting marketing landing page focused on speed and call-to-action optimization for a financial firm.",
   },
 ];
 
@@ -53,14 +55,15 @@ const Portfolio = () => {
         {/* Header */}
         <div className="text-center mb-12 space-y-4 animate-fade-in">
           <p className="text-primary text-sm font-display tracking-wider uppercase">
-            Latest Portfolio
+            Results for NYC Small Businesses
           </p>
+          {/* H2: Explicitly mentions technology and audience */}
           <h2 className="text-4xl md:text-5xl font-display font-bold">
-            Transforming Ideas into Exceptional
+            Next.js Websites That Drive **Measurable ROI**
           </h2>
+          {/* UPDATED DESCRIPTION: Clear value statement */}
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Business consulting consultants provide expert advice and guidance to help 
-            businesses improve their performance, efficiency, and organizational success.
+            View selected projects where strategic **Next.js and React development** helped small businesses in New York City achieve higher Google rankings, faster load times, and better conversion rates.
           </p>
         </div>
         
@@ -87,7 +90,6 @@ const Portfolio = () => {
             <GlassCard 
               key={index}
               className="bg-card border-border overflow-hidden group hover:border-primary/50 transition-smooth animate-fade-in"
-            //   style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:from-primary/30 group-hover:to-primary/10 transition-smooth">
                 <div className="text-6xl font-display font-bold text-primary/30">
@@ -111,11 +113,9 @@ const Portfolio = () => {
                 </p>
                 
                 <Button
-                //   variant="ghost" 
-                //   size="sm"
                   className="group/btn text-primary hover:text-primary p-0 h-auto"
                 >
-                  View Details
+                  View Case Study
                   <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                 </Button>
               </div>

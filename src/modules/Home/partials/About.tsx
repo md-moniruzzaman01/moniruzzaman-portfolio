@@ -1,7 +1,7 @@
 // ABOUT SECTION (Updating text and tags for web focus)
 import Button from "@components/Button";
 import GlassCard from "@components/Card";
-import { ArrowRight, Briefcase, Award, Zap } from "lucide-react";
+import { ArrowRight, Briefcase, Zap } from "lucide-react";
 
 const About = () => {
   return (
@@ -10,8 +10,6 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left - Stats Cards (No changes) */}
           <div className="space-y-6 animate-fade-in">
-
-
             {/* 2. Successful Projects */}
             <GlassCard className="bg-card border-border p-8 hover:border-primary/50 transition-smooth">
               <div className="flex items-start gap-6">
@@ -40,7 +38,7 @@ const About = () => {
 
             <div className="pt-4">
               <p className="text-muted-foreground text-sm italic">
-                Trusted by high-growth startups and established brands.
+                Trusted by high-growth startups and established brands in **New York**.
               </p>
             </div>
           </div>
@@ -53,7 +51,7 @@ const About = () => {
           >
             <div className="space-y-4">
               <p className="text-primary text-sm font-display tracking-wider uppercase">
-                My Mission
+                My Mission for the NYC Market
               </p>
               <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight">
                 Driving Web Performance &{" "}
@@ -61,22 +59,22 @@ const About = () => {
               </h2>
             </div>
 
-            {/* UPDATED MAIN PARAGRAPH: Focus on performance and conversion */}
+            {/* UPDATED MAIN PARAGRAPH: Focus on local context, performance, and conversion */}
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I am a results-focused developer dedicated to building digital
-              assets that provide **tangible ROI**. I focus on strategic development to enhance website speed, optimize conversion rates, and deliver reliable, high-performing web experiences that turn visitors into customers.
+              I am a results-focused **NYC developer** dedicated to building digital
+              assets that provide **tangible ROI** for local small businesses. I use the power of **Next.js and React** to enhance website speed, optimize **Local SEO**, and deliver high-performing web experiences that turn visitors into paying customers.
             </p>
           
-            {/* UPDATED SKILL TAGS: Focusing on web development skills */}
+            {/* UPDATED SKILL TAGS: Focusing on core SEO/business keywords */}
             <div className="flex flex-wrap gap-3 pt-4">
               <div className="px-6 py-3 bg-secondary rounded-full">
-                <p className="text-foreground font-medium">Full-Stack Development</p>
+                <p className="text-foreground font-medium">**Next.js & React Development**</p>
               </div>
               <div className="px-6 py-3 bg-secondary rounded-full">
-                <p className="text-foreground font-medium">E-commerce Solutions</p>
+                <p className="text-foreground font-medium">**Local SEO Optimization**</p>
               </div>
               <div className="px-6 py-3 bg-secondary rounded-full">
-                <p className="text-foreground font-medium">Strategic Consulting</p>
+                <p className="text-foreground font-medium">**Conversion-Driven Websites**</p>
               </div>
             </div>
 
