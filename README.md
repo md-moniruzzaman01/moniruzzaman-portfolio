@@ -1,6 +1,6 @@
 # moniruzzaman Portfolio
 
-![Portfolio Screenshot](https://softwara.com/moniruzzaman.png)
+![Portfolio Screenshot](https://dev-moniruzzaman.vercel.app/moniruzzaman.png)
 
 ## Overview
 
@@ -33,7 +33,7 @@ The project is built with **Next.js 13** using the App Router for server-side re
 
 ## Live Demo
 
-[View Portfolio](https://softwara.com)
+[View Portfolio](https://dev-moniruzzaman.vercel.app)
 
 ---
 

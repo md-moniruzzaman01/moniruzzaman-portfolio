@@ -1,26 +1,139 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ================================
+   DESIGN SYSTEM — GLOBAL CSS
+   Dark + Subtle Web3 Neon Glow
+   (Primary/Gold for buttons & text)
+================================ */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Base dark colors */
+    --background-dark: 220 12% 5%;      /* Deep navy/charcoal */
+    --foreground: 220 10% 95%;          /* Near white text */
+    --card: 220 12% 10%;                 /* Glass card bg */
+    --card-foreground: 220 10% 95%;
+
+    /* Neon accents for background & cards */
+    --neon-cyan: 180 70% 60%;
+    --neon-teal: 170 60% 55%;
+    --neon-purple: 260 50% 65%;
+
+    /* Button & text gradient */
+    --primary: 45 100% 51%;               /* Example primary color */
+    --gold-light: 48 100% 67%;
+    --primary-foreground: 220 10% 4%;
+
+    /* Border & radius */
+    --border: 220 12% 20%;
+    --radius: 1rem;
+
+    /* Glow & transition */
+    --glow: 0 0 25px hsl(var(--neon-cyan) / 0.4);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Background neon overlays */
+    --background-glow: radial-gradient(circle at 25% 30%, rgba(0,255,255,0.05), transparent 50%),
+                       radial-gradient(circle at 70% 20%, rgba(0,200,180,0.05), transparent 50%),
+                       radial-gradient(circle at 50% 75%, rgba(120,80,255,0.03), transparent 50%);
   }
 }
 
+/* --------------------
+   BODY & BACKGROUND
+-------------------- */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(var(--background-dark));
+  color: hsl(var(--foreground));
+  font-family: 'Sora', sans-serif;
+  font-feature-settings: "cv11", "ss01";
+  line-height: 1.6;
+  overflow-x: hidden;
+
+  /* Subtle neon overlays */
+  background-image: var(--background-glow);
+  background-size: 200% 200%;
+  animation: neonBackgroundShift 25s ease infinite;
+}
+
+@keyframes neonBackgroundShift {
+  0% { background-position: 0% 0%, 100% 100%, 50% 50%; }
+  50% { background-position: 100% 0%, 0% 100%, 50% 50%; }
+  100% { background-position: 0% 0%, 100% 100%, 50% 50%; }
+}
+
+/* --------------------
+   TEXT STYLES
+-------------------- */
+.text-gradient {
+  background: linear-gradient(
+    to right,
+    hsl(var(--primary)),
+    hsl(var(--gold-light))
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --------------------
+   GLASS CARDS
+-------------------- */
+.card-glass {
+  background-color: hsl(var(--card) / 0.1);
+  border: 1px solid hsl(var(--border) / 0.3);
+  border-radius: var(--radius);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: var(--transition);
+}
+
+.card-glass:hover {
+  background-color: hsl(var(--card) / 0.2);
+  box-shadow: 0 15px 40px hsl(var(--neon-cyan) / 0.5);
+  transform: scale(1.03);
+}
+
+/* --------------------
+   BUTTONS
+-------------------- */
+.button-gradient {
+  background: linear-gradient(
+    to right,
+    hsl(var(--primary)),
+    hsl(var(--gold-light))
+  );
+  color: hsl(var(--primary-foreground));
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+.button-gradient:hover {
+  transform: translateY(-2px);
+}
+
+/* --------------------
+   UTILITIES
+-------------------- */
+.transition-smooth {
+  transition: var(--transition);
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, hsl(var(--neon-cyan)), hsl(var(--neon-teal)), hsl(var(--neon-purple)));
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
   // Authors and publisher info
   authors: [
-    { name: "Moniruzzaman", url: "https://softwara.com" },
+    { name: "Moniruzzaman", url: "https://dev-moniruzzaman.vercel.app/" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/moniruzzaman-ripon" },
   ],
   creator: "Moniruzzaman",
@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     title: "Moniruzzaman | Web Developer for Small Business Solutions",
     description:
       "Full-stack web developer in NYC helping small businesses create professional websites and grow online. Projects are built with React and Next.js to improve visibility, drive results, and strengthen online presence.",
-    url: "https://softwara.com",
+    url: "https://dev-moniruzzaman.vercel.app/",
     siteName: "Moniruzzaman Portfolio",
     images: [
       {
-        url: "https://softwara.com/moniruzzaman.png",
+        url: "https://dev-moniruzzaman.vercel.app/moniruzzaman.png",
         width: 1200,
         height: 630,
         alt: "Moniruzzaman Portfolio - Web Developer",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
       "Full-stack web developer in NYC helping small businesses create professional websites and grow online. Projects are built with React and Next.js to improve visibility, drive results, and strengthen online presence.",
     site: "@dev_moniruzaman", // Optional
     creator: "@dev_moniruzaman", // Optional
-    images: ["https://softwara.com/moniruzzaman.png"],
+    images: ["https://dev-moniruzzaman.vercel.app/moniruzzaman.png"],
   },
 
   // Icons
@@ -92,7 +92,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#080A14] `}
       >
         {/* Navbar included on all pages */}
         <Navbar />

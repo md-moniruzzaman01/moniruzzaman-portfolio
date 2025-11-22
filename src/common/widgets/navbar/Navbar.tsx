@@ -1,25 +1,27 @@
 import Link from "next/link";
 
-export default function Navbar() {
+const navItems = [
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
+
+export default function FloatingNav() {
   return (
-    <header className="bg-gray-900 text-white py-4 shadow-md">
-      <nav className="container mx-auto flex justify-between items-center px-4">
-        <Link href="/">
-          <h1 className="text-2xl font-bold">Moniruzzaman</h1>
-        </Link>
-        <ul className="flex space-x-6">
-          <li>
-            <Link href="#about" className="hover:text-gray-400">About</Link>
-          </li>
-          <li>
-            <Link href="#skills" className="hover:text-gray-400">Skills</Link>
-          </li>
-          <li>
-            <Link href="#projects" className="hover:text-gray-400">Projects</Link>
-          </li>
-          <li>
-            <Link href="#contact" className="hover:text-gray-400">Contact</Link>
-          </li>
+    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+      <nav className="bg-gray-900/70 backdrop-blur-md text-white px-8 py-3 rounded-full shadow-lg">
+        <ul className="flex gap-8 justify-center items-center">
+          {navItems.map((item) => (
+            <li key={item.label}>
+              <Link
+                href={item.href}
+                className="hover:text-gray-300 transition-colors font-medium"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
