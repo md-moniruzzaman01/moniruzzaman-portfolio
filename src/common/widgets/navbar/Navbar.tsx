@@ -7,22 +7,16 @@ const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
-export default function Navbar() {
+export default function FloatingNav() {
   return (
-    <header className="bg-gray-900 text-white py-4 shadow-md">
-      <nav className="container mx-auto flex flex-wrap justify-between items-center px-4 max-w-7xl">
-        {/* Logo */}
-        <Link href="/">
-          <h1 className="text-2xl font-bold cursor-pointer">Moniruzzaman</h1>
-        </Link>
-
-        {/* Navigation Links */}
-        <ul className="flex flex-wrap gap-6 mt-4 lg:mt-0">
+    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+      <nav className="bg-gray-900/70 backdrop-blur-md text-white px-8 py-3 rounded-full shadow-lg">
+        <ul className="flex gap-8 justify-center items-center">
           {navItems.map((item) => (
             <li key={item.label}>
               <Link
                 href={item.href}
-                className="hover:text-gray-400 transition-colors font-medium"
+                className="hover:text-gray-300 transition-colors font-medium"
               >
                 {item.label}
               </Link>
