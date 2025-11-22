@@ -1,4 +1,3 @@
-// ABOUT SECTION (Updating text and tags for web focus)
 import Button from "@components/Button";
 import GlassCard from "@components/Card";
 import { ArrowRight, Briefcase, Zap } from "lucide-react";
@@ -8,9 +7,9 @@ const About = () => {
     <section id="about" className="py-24 px-6 relative">
       <div className="container mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Stats Cards (No changes) */}
+
+          {/* Left - Stats Cards */}
           <div className="space-y-6 animate-fade-in">
-            {/* 2. Successful Projects */}
             <GlassCard className="bg-card border-border p-8 hover:border-primary/50 transition-smooth">
               <div className="flex items-start gap-6">
                 <div className="p-4 bg-primary/10 rounded-2xl">
@@ -23,7 +22,6 @@ const About = () => {
               </div>
             </GlassCard>
 
-            {/* 3. Client Satisfaction */}
             <GlassCard className="bg-card border-border p-8 hover:border-primary/50 transition-smooth">
               <div className="flex items-start gap-6">
                 <div className="p-4 bg-primary/10 rounded-2xl">
@@ -38,53 +36,49 @@ const About = () => {
 
             <div className="pt-4">
               <p className="text-muted-foreground text-sm italic">
-                Trusted by high-growth startups and established brands in **New York**.
+                Trusted by high-growth startups and established brands in <strong>New York City</strong>.
               </p>
             </div>
           </div>
 
-
           {/* Right - Content */}
-          <div
-            className="space-y-6 animate-fade-in"
-            style={{ animationDelay: "0.2s" }}
-          >
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <div className="space-y-4">
               <p className="text-primary text-sm font-display tracking-wider uppercase">
-                My Mission for the NYC Market
+                My Mission for NYC Small Businesses
               </p>
               <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight">
-                Driving Web Performance &{" "}
-                <span className="text-gradient">Measurable ROI</span>.
+                Creating <span className="text-gradient">High-Impact Websites</span> That Drive Growth
               </h2>
             </div>
 
-            {/* UPDATED MAIN PARAGRAPH: Focus on local context, performance, and conversion */}
+            {/* Updated Main Paragraph */}
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I am a results-focused **NYC developer** dedicated to building digital
-              assets that provide **tangible ROI** for local small businesses. I use the power of **Next.js and React** to enhance website speed, optimize **Local SEO**, and deliver high-performing web experiences that turn visitors into paying customers.
+              I help NYC small businesses enhance their online presence, attract more customers, and achieve measurable results. 
+              Every website I build focuses on <strong>performance, usability, and conversion optimization</strong> to turn visitors into loyal clients.
             </p>
-          
-            {/* UPDATED SKILL TAGS: Focusing on core SEO/business keywords */}
-            <div className="flex flex-wrap gap-3 pt-4">
+
+            {/* Updated Skill Tags */}
+               <div className="flex flex-wrap gap-3 pt-4">
               <div className="px-6 py-3 bg-secondary rounded-full">
-                <p className="text-foreground font-medium">**Next.js & React Development**</p>
+                <p className="text-foreground font-medium">Web Development</p>
               </div>
               <div className="px-6 py-3 bg-secondary rounded-full">
-                <p className="text-foreground font-medium">**Local SEO Optimization**</p>
+                <p className="text-foreground font-medium">E-commerce Solutions</p>
               </div>
               <div className="px-6 py-3 bg-secondary rounded-full">
-                <p className="text-foreground font-medium">**Conversion-Driven Websites**</p>
+                <p className="text-foreground font-medium">Strategic Consulting</p>
               </div>
             </div>
+            
 
-            <Button 
-              className="font-semibold transition-smooth"
-            >
+            {/* CTA Button */}
+            <Button className="font-semibold transition-smooth">
               Let's Discuss Your Project
               <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
+
         </div>
       </div>
     </section>

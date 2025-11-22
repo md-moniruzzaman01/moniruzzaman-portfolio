@@ -73,8 +73,8 @@ const Contact = () => {
           </div>
           
           {/* Right - CTA Form Placeholder */}
-          <div className="flex items-center justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <GlassCard className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20 p-12 text-center space-y-6 w-full">
+          <div className="flex items-center  justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20 p-12 text-center space-y-6 w-full">
               <div className="space-y-4">
                 <h3 className="text-3xl font-display font-bold">
                   What's Your Next Project?
@@ -88,12 +88,12 @@ const Contact = () => {
               <Button
                 primary
                 // Consider changing this to a link to a contact form page for better tracking
-                className="group button-gradient hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-smooth"
+                className="group button-gradient hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-smooth mt-6"
               >
                 Request Your Project Estimate
                 <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-            </GlassCard>
+            </div>
           </div>
         </div>
       </div>
