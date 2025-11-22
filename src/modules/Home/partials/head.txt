@@ -1,0 +1,59 @@
+<Head>
+        {/* Primary Meta Tags */}
+        <title>Yousuf | NYC Web Developer | Small Business Websites</title>
+        <meta
+          name="description"
+          content="Yousuf, freelance web developer in NYC, creates SEO-friendly, affordable websites for small businesses. React and Next.js solutions to boost online presence."
+        />
+        <meta
+          name="keywords"
+          content="yousuf, web developer, New York web developer, small business website NYC, website design New York, React developer NY, Next.js web development NYC, freelance web developer New York, local web developer NYC, online presence for small business NY, affordable website solutions NY"
+        />
+        <link rel="canonical" href="https://softwara.com/" />
+
+        {/* Open Graph / Social Sharing */}
+        <meta property="og:title" content="Yousuf | NYC Web Developer" />
+        <meta
+          property="og:description"
+          content="Freelance web developer in NYC creating websites for small businesses using React and Next.js."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://softwara.com/" />
+        <meta
+          property="og:image"
+          content="https://softwara.com/yousuf.png"
+        />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Yousuf | NYC Web Developer" />
+        <meta
+          name="twitter:description"
+          content="Freelance web developer in NYC creating websites for small businesses using React and Next.js."
+        />
+        <meta
+          name="twitter:image"
+          content="https://softwara.com/yousuf.png"
+        />
+
+        {/* Structured Data JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Yousuf",
+              url: "https://softwara.com",
+              sameAs: [
+                "https://www.linkedin.com/in/yousuf",
+              ],
+              jobTitle: "Web Developer",
+              worksFor: {
+                "@type": "Organization",
+                name: "Yousuf Portfolio",
+              },
+            }),
+          }}
+        />
+      </Head>
