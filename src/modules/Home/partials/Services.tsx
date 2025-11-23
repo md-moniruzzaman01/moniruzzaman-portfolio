@@ -42,7 +42,7 @@ const Services = () => {
 						My Core Offerings
 					</p>
 					<h2 className="text-4xl md:text-5xl font-display font-bold">
-						**High-Performance Solutions** for Your Web Presence
+						Full-Stack Solutions for Enterprise Web Presence
 					</h2>
 					<p className="text-muted-foreground text-lg max-w-3xl mx-auto">
 						I deliver full-stack web solutions designed not just to look good, but to perform flawlessly and achieve measurable business results.

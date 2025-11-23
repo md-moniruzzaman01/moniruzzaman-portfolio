@@ -10,7 +10,7 @@ export default function GlassCard({ children, className = "", style }: GlassCard
     >
       {/* Glass Backing Layer */}
       <div
-        className="absolute inset-0 rounded-2xl border border-white/20 bg-white/10 transition-all duration-300 ease-out group-hover:bg-white/20"
+        className="absolute inset-0 rounded-2xl border border-white/20 bg-white/5 transition-all duration-300 ease-out group-hover:bg-white/10"
         style={{
           backdropFilter: "blur(20px) saturate(180%)",
           WebkitBackdropFilter: "blur(20px) saturate(180%)",
