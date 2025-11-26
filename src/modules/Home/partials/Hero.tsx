@@ -3,11 +3,12 @@ import { ArrowRight } from "lucide-react";
 import heroImage from "../../../assets/web developer.jpg";
 import Image from "next/image";
 import Button from "@components/Button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
     // Increase vertical padding for more space around content
-    <section className="min-h-[90vh] flex items-center justify-center px-4 md:px-6 py-28 md:py-40 relative overflow-hidden">
+    <section className="min-h-[90vh] flex items-center justify-center px-4 md:px-6 py-16 md:py-20 relative overflow-hidden">
       {/* Background Gradient - Deeper and more subtle for a premium feel */}
       <div className="absolute inset-0 bg-gradient-to-br from-charcoal/90 via-background to-charcoal-light/90 opacity-90" />
 
@@ -19,7 +20,8 @@ const Hero = () => {
         <div className="grid lg:grid-cols-12 gap-16 items-center">
           {/* Left Content: Text and CTA */}
           {/* Increased space-y to 8 for more vertical breathing room */}
-          <div className="lg:col-span-7 space-y-8 animate-fade-in">
+          <div className="lg:col-span-7 space-y-8 animate-fade-in order-2 lg:order-1">
+
             <div className="space-y-4">
               {/* Pre-title: Maintained size but ensure good tracking and display font */}
               <p className="text-primary text-xl font-display tracking-widest uppercase">
@@ -43,7 +45,7 @@ const Hero = () => {
                 primary
                 className="group button-gradient shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 text-primary-foreground font-bold px-12 py-5 rounded-full transition-all duration-300 transform hover:-translate-y-0.5 text-lg"
               >
-                Download Resume
+                 <Link  href="https://drive.google.com/uc?export=download&id=1RWL_AmCdcqngK7aSsrDt1bYnBGDgdrCv">Download Resume</Link>
                 <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
@@ -56,10 +58,11 @@ const Hero = () => {
           </div>
 
           {/* Right Image: Image layout maintained, using lg:col-span-5 and added 'xl:block' for a better visual break at large screens */}
-          <div
-            className="lg:col-span-5 relative hidden lg:block xl:block animate-fade-in"
-            style={{ animationDelay: "0.4s" }}
-          >
+<div
+  className="lg:col-span-5 relative block animate-fade-in order-1 lg:order-2"
+  style={{ animationDelay: "0.4s" }}
+>
+
             {/* The main container for the image with the neon border */}
             <div className="relative p-2.5 transition-all duration-500 ">
               {/* Inner container to hold the image and its internal tech background */}

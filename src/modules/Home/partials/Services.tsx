@@ -3,6 +3,7 @@ import GlassCard from "@components/Card";
 // Icons: TrendingUp (Strategy), Code (Building), Zap (Performance/Scaling)
 import { TrendingUp, Code, Zap, ArrowRight } from "lucide-react"; 
 import Button from "@components/Button"; 
+import Link from "next/link";
 
 // --- UPDATED SERVICES DATA: Focused on Web Development Lifecycle ---
 const services = [
@@ -90,7 +91,7 @@ const Services = () => {
 					<Button
 						className="group button-gradient hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-full transition-smooth"
 					>
-						Get a Quote for Your Project
+						<Link href="#contact">Get a Quote for Your Project</Link>
 						<ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
 					</Button>
 				</div>
