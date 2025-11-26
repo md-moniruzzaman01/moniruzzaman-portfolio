@@ -4,6 +4,12 @@ import { ArrowRight } from "lucide-react";
 import Button from "@components/Button";
 import GlassCard from "@components/Card";
 import Image from "next/image";
+import ecommarceImg from "../../../assets/Ecommerce Website.png";
+import ecommarceDashboardImg from "../../../assets/ecommerce dashboard.png";
+import swiftEducation from "../../../assets/swift education.png";
+import faithfullTree from "../../../assets/faithfull tree.png";
+import tarminalImage from "../../../assets/tarminal.png";
+import Link from "next/link";
 
 const categories = [
   "All",
@@ -15,54 +21,62 @@ const categories = [
 
 const projects = [
   {
-    title: "Brooklyn E-commerce Platform (Full-Stack)",
+    title: "PC Store E-commerce Platform (Full-Stack)",
     category: "E-commerce & Retail",
     description:
-      "High-performance online retail store built with **Next.js** and **Node.js/Stripe** integration. Achieved a **35% speed increase** and improved conversion rates.",
-    image:
-      "https://images.unsplash.com/photo-1612831455547-df8471677c24?auto=format&fit=crop&w=800&q=80",
+      "A fully custom online PC store built with **Next.js**, **MongoDB**, and **Stripe** payments. Features include advanced product filtering, secure checkout flow, and server-optimized pages that improved loading speed by **35%**, resulting in higher conversions.",
+    image: ecommarceImg,
+    preview: "https://pc-store-nu.vercel.app/",
+    github: "",
   },
   {
-    title: "Manhattan Law Firm Service Website",
+    title: "E-commerce Admin Dashboard",
+    category: "E-commerce & Retail",
+    description:
+      "A complete **e-commerce management dashboard** built using **Next.js**, **API Routes**, and **Prisma**. Includes product management, category control, inventory tracking, order monitoring, and real-time analytics for business owners.",
+    image: ecommarceDashboardImg,
+    preview: "https://ecommerce-dashboard-lac-two.vercel.app/",
+    github: "",
+  },
+  {
+    title: "IT Agency / Service Company Website",
     category: "Service Websites",
     description:
-      "Professional, **SEO-optimized** service website for a Manhattan law firm, built with strong focus on **lead generation** (increased by 40%).",
-    image:
-      "https://images.unsplash.com/photo-1601582581248-bc8b4b69fc0e?auto=format&fit=crop&w=800&q=80",
+      "A modern and SEO-optimized website for an IT service agency. Fully responsive, fast, and conversion-focused—built using **Next.js** with animated UI sections, service showcase, and lead-capture optimization.",
+    image: tarminalImage,
+    preview: "https://tarminal.vercel.app/",
+    github: "",
   },
   {
-    title: "Enterprise Analytics Dashboard (React/MongoDB)",
+    title: "RPL Education Platform (Next.js)",
+    category: "Full-Stack Development",
+    description:
+      "Education service website built with **Next.js** featuring course pages, dynamic routing, contact automation, and optimized page performance. Designed with a clean, modern UI and mobile-first approach.",
+    image: swiftEducation,
+    preview: "https://swift-education.vercel.app/",
+    github: "",
+  },
+  {
+    title: "Custom ERP – Warehouse Management System",
     category: "Enterprise & SaaS",
     description:
-      "**React**-based business analytics **SaaS dashboard** providing real-time data insights using a scalable **MongoDB** architecture.",
+      "A scalable backend system built with **NestJS Microservices**, **RabbitMQ**, and **PostgreSQL**. Handles warehouse inventory, user roles, stock movement logs, and automated operational workflows for enterprise-level usage.",
     image:
-      "https://images.unsplash.com/photo-1591696205602-3a4d0cdde6b6?auto=format&fit=crop&w=800&q=80",
+      "",
+    preview: "",
+    github: "",
   },
   {
-    title: "Queens Local Restaurant Site (Next.js)",
-    category: "Service Websites",
+    title: "Tree Removal / Landscaping Service Platform",
+    category: "Full-Stack Development",
     description:
-      "Mobile-first, fully responsive website for a Queens restaurant leveraging **Next.js** for fast load times and implementing online reservations.",
-    image:
-      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    title: "Custom ERP System API (NestJS Microservices)",
-    category: "Enterprise & SaaS",
-    description:
-      "Backend architecture development for a custom **ERP system** utilizing **NestJS Microservices** and optimized for high-volume data handling.",
-    image:
-      "https://images.unsplash.com/photo-1612831455548-8b0e12d89c0f?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    title: "Financial Services Marketing Page",
-    category: "Service Websites",
-    description:
-      "High-converting marketing landing page focused on speed and call-to-action optimization for a financial firm, backed by a simple **Node.js** API.",
-    image:
-      "https://images.unsplash.com/photo-1556740765-90f8a2e3cf7b?auto=format&fit=crop&w=800&q=80",
+      "A high-conversion business website designed for local SEO and service booking. Built with **Next.js**, optimized for Google ranking, fast load time, and strong call-to-action structure to increase leads.",
+    image: faithfullTree,
+    preview: "https://faithfultrees.com/",
+    github: "",
   },
 ];
+
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -92,7 +106,10 @@ const Portfolio = () => {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+        <div
+          className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in"
+          style={{ animationDelay: "0.1s" }}
+        >
           {categories.map((category) => {
             const isActive = activeCategory === category;
             return (
@@ -101,8 +118,8 @@ const Portfolio = () => {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-3 rounded-full font-medium transition-smooth ${
                   isActive
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-secondary text-foreground hover:bg-secondary/80"
+                    ? "bg-primary text-gradient"
+                    : "bg-secondary text-foreground  hover:bg-secondary/80"
                 }`}
               >
                 {category}
@@ -116,18 +133,18 @@ const Portfolio = () => {
           {filteredProjects.map((project, index) => (
             <GlassCard
               key={index}
-              className="bg-card border-border overflow-hidden group hover:border-primary/50 transition-smooth animate-fade-in"
+              className="bg-card border-border overflow-hidden group hover:border-primary/50 transition-smooth animate-fade-in "
             >
               <div className="relative w-full h-64">
                 <Image
-                  src={project.image}
+                  src={project.image ? project.image : ""}
                   alt={project.title}
                   fill
-                  className="object-cover transition-transform group-hover:scale-105"
+                  className=" rounded-xl transition-transform group-hover:scale-105"
                 />
               </div>
 
-              <div className="p-6 space-y-4">
+              <div className="p-2 space-y-4">
                 <span className="text-sm text-primary font-medium">
                   {project.category}
                 </span>
@@ -136,12 +153,20 @@ const Portfolio = () => {
                   {project.title}
                 </h3>
 
-                <p className="text-muted-foreground text-sm">{project.description}</p>
+                <p className="text-muted-foreground text-sm">
+                  {project.description}
+                </p>
 
-                <Button className="group/btn text-primary hover:text-primary p-0 h-auto">
-                  View Case Study
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
+                <div className="flex justify-end">
+                  {project.preview && (
+                    <Button className="group/btn text-primary hover:text-primary p-0 h-auto">
+                      <Link target="blank" href={project.preview}>
+                        View
+                      </Link>
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </Button>
+                  )}
+                </div>
               </div>
             </GlassCard>
           ))}

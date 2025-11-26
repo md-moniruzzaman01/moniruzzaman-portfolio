@@ -1,10 +1,11 @@
 import Button from "@components/Button";
 import GlassCard from "@components/Card";
 import { ArrowRight, Briefcase, Zap } from "lucide-react";
+import Link from "next/link";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 px-6 relative">
+    <section id="about" className="py-20 px-6 relative">
       <div className="container mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left - Stats Cards */}
@@ -16,7 +17,7 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-5xl font-display font-bold text-primary mb-2">
-                    241+
+                    41+
                   </h3>
                   <p className="text-muted-foreground text-lg">
                     Successful Projects Delivered
@@ -96,7 +97,7 @@ const About = () => {
 
             {/* CTA Button */}
             <Button className="font-semibold transition-smooth">
-              Let's Discuss Your Project
+              <Link href="#contact">Let's Discuss Your Project</Link>
               <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

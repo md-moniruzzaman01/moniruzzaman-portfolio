@@ -1,51 +1,52 @@
 import GlassCard from "@components/Card";
 import { Briefcase } from "lucide-react";
 
-// --- UPGRADED EXPERIENCES (Clean, professional, SEO-friendly) ---
 const experiences = [
   {
-    period: "2017 — Present",
-    title: "Freelance Full-Stack Developer (NYC)",
+    period: "2020 — Present",
+    title: "Full-Stack Developer & Technical Lead (Freelance)",
     description:
-      "Building high-performance, SEO-optimized applications using Next.js, React, and modern backend stacks for NYC small businesses and startups.",
+      "Building high-performance, SEO-optimized applications using Next.js, React, TypeScript, and Node.js for NYC businesses and global clients. Focused on scalable systems, automation, and conversion-driven UI/UX.",
   },
   {
-    period: "2014 — 2017",
-    title: "Lead Front-End Engineer",
+    period: "2024 — 2025",
+    title: "Web Strategy & System Architecture Consultant",
     description:
-      "Led engineering teams delivering scalable UI systems, API-driven dashboards, and enterprise-grade front-end architecture.",
+      "Advised businesses on digital strategy, performance improvements, backend architecture, SEO, and automation. Helped companies reduce operational cost and scale through optimized technical solutions.",
   },
   {
-    period: "2010 — 2014",
-    title: "Web Strategy Consultant",
+    period: "2022 — 2024",
+    title: "Full-Stack Software Engineer",
     description:
-      "Improved businesses' digital presence by advising on performance, UX, and e-commerce flows, directly contributing to measurable revenue growth.",
+      "Developed full-stack platforms using Next.js, NestJS, REST APIs, and MySQL. Delivered dashboards, authentication systems, microservices, and custom automation tools for SMEs and startup teams.",
   },
   {
-    period: "2005 — 2009",
-    title: "Digital Design & UX Prototyping",
+    period: "2020 — 2022",
+    title: "Front-End Engineer (React Ecosystem)",
     description:
-      "Developed a strong foundation in UX/UI, rapid prototyping, and translating design systems into functional HTML/CSS/JS interfaces.",
+      "Built responsive UI systems, component libraries, and dashboard interfaces using React, Tailwind CSS, and TypeScript. Collaborated with backend teams to ship scalable, API-driven applications.",
   },
 ];
+
 
 // --- PROJECT & CONTRACT ROLES (More concise + impact focused) ---
 const positions = [
   {
-    company: "NYC Tech Solutions (Contract)",
+    company: "Task Technology Ltd",
     duration: "2 Years",
-    role: "Next.js & React Specialist",
+    role: "Next.js & React Consultant",
     description:
-      "Migrated legacy systems to modern Next.js architectures, improving Core Web Vitals by an average of 40%.",
+      "Modernized legacy web applications using **Next.js, React, and TypeScript**, improving Core Web Vitals by **40%+** and boosting client site performance and SEO rankings.",
   },
   {
-    company: "Digital Innovations Inc.",
+    company: "NEC Group (Contract)",
     duration: "3 Years",
-    role: "Full-Stack Developer",
+    role: "Full-Stack Engineer",
     description:
-      "Built and maintained full-stack applications using the MERN stack with a strong focus on backend scalability and database design.",
+      "Designed and developed **scalable full-stack applications** using **MERN stack** and **NestJS microservices**, optimizing backend performance, database architecture, and automation workflows.",
   },
 ];
+
 
 const Experience = () => {
   return (

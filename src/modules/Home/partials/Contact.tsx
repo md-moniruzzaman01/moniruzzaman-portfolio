@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 const Contact = () => {
   const emailAddress = "dev.moniruzzaman@gmail.com";
-  const phone = "+8801618396301";
+  const phone = "+88 01618396301";
   return (
     <section id="contact" className="py-24 px-6">
       <div className="container mx-auto max-w-7xl">
@@ -71,7 +71,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+8801618396301"
                     className="font-medium hover:text-primary transition-colors"
                   >
                     {phone}
