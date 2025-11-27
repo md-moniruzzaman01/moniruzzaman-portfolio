@@ -1,17 +1,26 @@
-import Head from "next/head";
-import Image from "next/image";
-import Hero from "./partials/Hero";
+
 import About from "./partials/About";
 import Services from "./partials/Services";
 import Portfolio from "./partials/portfolio";
 import Experience from "./partials/Experience";
 import Contact from "./partials/Contact";
 import HeroSection from "./partials/HeroSection";
+import WorkedWithSection from "./partials/WorkWithCompany";
+
+const myPartners = [
+  { name: 'ClickUp', displayText: 'ClickUp' },
+  { name: 'Dropbox', displayText: 'Dropbox' },
+  { name: 'Paychex', displayText: 'Paychex' },
+  { name: 'Elastic', displayText: 'Elastic' },
+  { name: 'Stripe', displayText: 'Stripe' },
+  // Add your own partners here!
+];
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      <WorkedWithSection partners={myPartners}/>
        {/* <h1 className="text-6xl sm:text-7xl md:text-8xl font-black leading-snug tracking-tighter text-gray-900 dark:text-white">
             FULL-STACK <br />
 
@@ -23,7 +32,7 @@ export default function Home() {
 <h1 className="text-[200px]  font-display font-extrabold leading-tight tracking-tighter ">
       <span>Full-Stack</span> Web Developer
     </h1> */}
-      <Hero />
+      {/* <Hero /> */}
       <About />
       <Services />
       <Portfolio />

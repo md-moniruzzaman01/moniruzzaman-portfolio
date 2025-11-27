@@ -43,7 +43,7 @@
    BODY & BACKGROUND
 -------------------- */
 body {
-  background-color: hsl(var(--background-dark));
+  /* background-color: hsl(var(--background-dark)); */
   color: hsl(var(--foreground));
   font-family: 'Sora', sans-serif;
   font-feature-settings: "cv11", "ss01";
@@ -134,8 +134,8 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-@keyframes gradientShift {
+/* @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-}
+} */
