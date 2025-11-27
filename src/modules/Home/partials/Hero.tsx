@@ -21,7 +21,6 @@ const Hero = () => {
           {/* Left Content: Text and CTA */}
           {/* Increased space-y to 8 for more vertical breathing room */}
           <div className="lg:col-span-7 space-y-8 animate-fade-in order-2 lg:order-1">
-
             <div className="space-y-4">
               {/* Pre-title: Maintained size but ensure good tracking and display font */}
               <p className="text-primary text-xl font-display tracking-widest uppercase">
@@ -35,7 +34,8 @@ const Hero = () => {
 
               {/* H2: Increased size and more prominent pt-3 for separation */}
               <h2 className="text-xl md:text-2xl font-display text-muted-foreground pt-3 font-medium leading-snug">
-                    Building High-Performance Full-Stack Solutions: Next.js, React, Node.js, and Enterprise Systems.
+                Building High-Performance Full-Stack Solutions: Next.js, React,
+                Node.js, and Enterprise Systems.
               </h2>
             </div>
 
@@ -45,24 +45,25 @@ const Hero = () => {
                 primary
                 className="group button-gradient shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 text-primary-foreground font-bold px-12 py-5 rounded-full transition-all duration-300 transform hover:-translate-y-0.5 text-lg"
               >
-                 <Link  href="https://drive.google.com/uc?export=download&id=1RWL_AmCdcqngK7aSsrDt1bYnBGDgdrCv">Download Resume</Link>
+                <Link href="https://drive.google.com/uc?export=download&id=1RWL_AmCdcqngK7aSsrDt1bYnBGDgdrCv">
+                  Download Resume
+                </Link>
                 <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
 
             {/* Specialty Text: Increased pt-6 and added tracking-wider for a final detail */}
             <p className="pt-6 text-base text-primary/80 border-t border-primary/20 max-w-xl mt-8 tracking-wider">
-              <span className="font-bold">Specializing in:</span>{" "}
-              Portfolios, E-commerce, SaaS/ERPs, and Data-Driven Dashboards.
+              <span className="font-bold">Specializing in:</span> Portfolios,
+              E-commerce, SaaS/ERPs, and Data-Driven Dashboards.
             </p>
           </div>
 
           {/* Right Image: Image layout maintained, using lg:col-span-5 and added 'xl:block' for a better visual break at large screens */}
-<div
-  className="lg:col-span-5 relative block animate-fade-in order-1 lg:order-2"
-  style={{ animationDelay: "0.4s" }}
->
-
+          <div
+            className="lg:col-span-5 relative block animate-fade-in order-1 lg:order-2"
+            style={{ animationDelay: "0.4s" }}
+          >
             {/* The main container for the image with the neon border */}
             <div className="relative p-2.5 transition-all duration-500 ">
               {/* Inner container to hold the image and its internal tech background */}
