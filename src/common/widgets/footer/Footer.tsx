@@ -81,10 +81,10 @@ const Footer = () => {
                         <DashedDivider title="WANT TO SEE OUR WORK?" />
                         <div className="space-y-4">
                             <a
-                                href="mailto:hey@mantis.works"
+                                href="mailto:dev.moniruzzaman@gmail.com"
                                 className="block text-2xl font-extrabold text-indigo-400 hover:text-indigo-300 transition-colors py-1"
                             >
-                                hey@mantis.works
+                               dev.moniruzzaman@gmail.com
                             </a>
                             <p className="text-sm font-light text-gray-400 max-w-xs">
                                 Interested in partnering? Let's start the conversation and build something extraordinary together.
@@ -117,11 +117,11 @@ const Footer = () => {
                 </div>
 
                 {/* Final Massive Typography (Mantis) - REMOVED overflow-hidden */}
-                {/* <div className="pt-8">
-                    <h1 className="text-[12rem] sm:text-[18rem] md:text-[25rem] lg:text-[30rem] font-extrabold leading-none text-gray-900 select-none">
-                        Mantis
+                <div className="pt-2 overflow-hidden">
+                    <h1 className="text-[5rem] sm:text-[3rem] md:text-[15rem] lg:text-[20rem] font-extrabold leading-none text-gray-900 select-none">
+                        Moniruzzaman
                     </h1>
-                </div> */}
+                </div>
             </div>
         </footer>
     );

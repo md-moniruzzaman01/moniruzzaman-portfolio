@@ -465,34 +465,7 @@ const SkillOrbitV2: React.FC<SkillOrbitV2Props> = () => {
   );
 };
 
-// ====================================================================
-// --- 4. ABOUTSECTION COMPONENT (Default Export) ---
-// ====================================================================
 
-// Core competencies
-// const professionalCommitments = [
-//   {
-//     icon: Code,
-//     title: "LEADERSHIP",
-//     detail:
-//       "Driving architectural vision and modern performance standards across development teams.",
-//     color: "text-indigo-400",
-//   },
-//   {
-//     icon: Shield,
-//     title: "RESILIENCE",
-//     detail:
-//       "Implementing robust error handling and automated testing for guaranteed platform stability.",
-//     color: "text-red-400",
-//   },
-//   {
-//     icon: GitBranch,
-//     title: "OWNERSHIP",
-//     detail:
-//       "End-to-end management of the product lifecycle, from concept to production monitoring.",
-//     color: "text-yellow-400",
-//   },
-// ];
 
 const AboutSection = () => {
   return (
@@ -509,9 +482,9 @@ const AboutSection = () => {
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-7">
           <h1 className="text-2xl sm:text-7xl md:text-4xl font-black leading-snug tracking-tightertext-white">
-            FULL-STACK <br />
+           Let's make someting  <br />
             <span className="text-white dark:text-gray-900 bg-indigo-600 dark:bg-indigo-400 px-4 py-1 inline-block transform -rotate-1">
-              WEB DEVELOPER
+            Amazing toghtether
             </span>
           </h1>
         </div>
@@ -556,7 +529,7 @@ const AboutSection = () => {
           {/* Right Column (Manifesto List) */}
           <div className="lg:col-span-5 bg-gray-900/90 backdrop-blur-sm p-8 rounded-xl border border-gray-800 shadow-xl">
             <h3 className="text-xl font-bold text-white uppercase tracking-wider mb-6 border-b border-indigo-700 pb-3">
-              Engineering Manifesto
+              Professional Commitments
             </h3>
 
             <div className="space-y-6">
