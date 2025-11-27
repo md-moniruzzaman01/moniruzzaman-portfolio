@@ -49,6 +49,8 @@ body {
   font-feature-settings: "cv11", "ss01";
   line-height: 1.6;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 
   /* Subtle neon overlays */
   background-image: var(--background-glow);

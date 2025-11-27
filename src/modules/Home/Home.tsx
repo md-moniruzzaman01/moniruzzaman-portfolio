@@ -6,11 +6,24 @@ import Services from "./partials/Services";
 import Portfolio from "./partials/portfolio";
 import Experience from "./partials/Experience";
 import Contact from "./partials/Contact";
+import HeroSection from "./partials/HeroSection";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-     <Hero />
+      <HeroSection />
+       {/* <h1 className="text-6xl sm:text-7xl md:text-8xl font-black leading-snug tracking-tighter text-gray-900 dark:text-white">
+            FULL-STACK <br />
+
+            <span className="text-white dark:text-gray-900 bg-indigo-600 dark:bg-indigo-400 px-4 py-1 inline-block transform -rotate-1">
+                WEB DEVELOPER
+            </span>
+          </h1>
+
+<h1 className="text-[200px]  font-display font-extrabold leading-tight tracking-tighter ">
+      <span>Full-Stack</span> Web Developer
+    </h1> */}
+      <Hero />
       <About />
       <Services />
       <Portfolio />
