@@ -133,8 +133,6 @@ export const topSkills: { name: string; style: PositionStyle }[] = [
 
   { name: "JavaScript", style: { top: "3%", left: "30%" } },
   { name: "TypeScript", style: { top: "3%", left: "35%" } },
-  // { name: "Tailwind", style: { top: "12%", left: "55%" } },
-  // { name: "Bootstrap", style: { top: "12%", left: "65%" } },
   { name: "React", style: { top: "3%", left: "15" } },
     { name: "Tailwind", style: { top: "3%", left: "20%" } },
 
@@ -177,4 +175,13 @@ export const professionalCommitments = [
       "Transforming ideas into polished digital experiences through thoughtful design and innovative problem-solving.",
     color: "text-yellow-400",
   },
+];
+
+
+export const myPartners = [
+  { name: 'Swift Education', displayText: 'Swift Education' },
+  { name: 'faith fultrees.ltd', displayText: 'Faith fultrees' },
+  { name: 'Newtech Technology', displayText: 'Newtech technology' },
+  { name: 'NEC Group', displayText: 'NEC Group' },
+  // Add your own partners here!
 ];

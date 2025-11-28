@@ -58,10 +58,10 @@ const Experience = () => {
           <p className="text-primary text-sm font-display tracking-wider uppercase">
             Proven Development Background
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold">
+          <h2 className="text-4xl md:text-5xl font-display font-bold textZoom">
             10+ Years of Web Development Experience
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto textZoom">
             I specialize in designing, developing, and deploying robust{" "}
             <span className="text-gradient font-semibold">
               Next.js and React applications
@@ -93,7 +93,7 @@ const Experience = () => {
                     {exp.period}
                   </span>
 
-                  <h4 className="text-xl font-display font-semibold">
+                  <h4 className="text-xl font-display font-semibold textZoom">
                     {exp.title}
                   </h4>
 
@@ -114,7 +114,7 @@ const Experience = () => {
             {positions.map((position, index) => (
               <GlassCard
                 key={index}
-                className="bg-card border-border p-6 hover:border-primary/50 transition-smooth animate-fade-in"
+                className="bg-card border-border p-6 hover:border-primary/50 transition-smooth fade-on-scroll"
                 style={{ animationDelay: `${(index + 2) * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
@@ -127,7 +127,7 @@ const Experience = () => {
                   {/* Content */}
                   <div className="flex-1 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h4 className="text-lg font-display font-semibold">
+                      <h4 className="text-lg font-display font-semibold textZoom">
                         {position.company}
                       </h4>
                       <span className="text-sm text-primary">

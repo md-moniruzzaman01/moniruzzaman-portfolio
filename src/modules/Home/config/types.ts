@@ -26,3 +26,13 @@ export type SkillOrbitProps ={
     isBackground?: boolean; // New prop for conditional rendering
 }
 
+
+
+export type Partner ={
+  name: string;
+  displayText: string;
+}
+
+export type ClientTickerProps ={
+  partners: Partner[];
+}
