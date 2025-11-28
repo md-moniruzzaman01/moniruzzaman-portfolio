@@ -61,8 +61,7 @@ const projects = [
     category: "Enterprise & SaaS",
     description:
       "A scalable backend system built with **NestJS Microservices**, **RabbitMQ**, and **PostgreSQL**. Handles warehouse inventory, user roles, stock movement logs, and automated operational workflows for enterprise-level usage.",
-    image:
-      "",
+    image: "",
     preview: "",
     github: "",
   },
@@ -77,7 +76,6 @@ const projects = [
   },
 ];
 
-
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
@@ -91,13 +89,13 @@ const Portfolio = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12 space-y-4 animate-fade-in">
-          <p className="text-primary text-sm font-display tracking-wider uppercase">
+          <p className="text-primary text-sm font-display tracking-wider uppercase ">
             Work Delivered for NYC Businesses
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold">
+          <h2 className="text-2xl md:text-5xl font-display font-bold textZoom">
             Real Full-Stack Projects Built with Modern Web Technologies
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-sm md:text-lg max-w-3xl mx-auto textZoom">
             Explore selected work built with **Next.js, React, TypeScript,
             Node.js, NestJS, and MongoDB**. These projects helped local
             businesses improve performance, search rankings, automation, and
@@ -116,7 +114,7 @@ const Portfolio = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 rounded-full font-medium transition-smooth ${
+                className={`px-6 py-3 rounded-full font-medium transition-smooth text-xs md:text-md ${
                   isActive
                     ? "bg-primary text-gradient"
                     : "bg-secondary text-foreground  hover:bg-secondary/80"
@@ -133,15 +131,21 @@ const Portfolio = () => {
           {filteredProjects.map((project, index) => (
             <GlassCard
               key={index}
-              className="bg-card border-border overflow-hidden group hover:border-primary/50 transition-smooth animate-fade-in "
+              className="bg-card border-border overflow-hidden group hover:border-primary/50 transition-smooth fade-on-scroll"
             >
               <div className="relative w-full h-64">
-                <Image
-                  src={project.image ? project.image : ""}
-                  alt={project.title}
-                  fill
-                  className=" rounded-xl transition-transform group-hover:scale-105"
-                />
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className=" rounded-xl transition-transform group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="h-full flex justify-center items-center text-2xl text-gray-600">
+                    <p>No Image</p>
+                  </div>
+                )}
               </div>
 
               <div className="p-2 space-y-4">

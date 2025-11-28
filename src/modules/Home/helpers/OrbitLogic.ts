@@ -7,18 +7,18 @@ const CORE_Y = VIEWBOX_H * 0.62; // 465
 
 
 
-export const getAbsPosition = (style: PositionStyle): AbsolutePosition=> {
-    const topPct = parseFloat(style.top);
-    const leftPct = parseFloat(style.left);
-    const absX = (leftPct / 100) * VIEWBOX_W;
-    const absY = (topPct / 100) * VIEWBOX_H;
-    
-    return {
-        absX,
-        absY,
-        relX: absX - CORE_X, 
-        relY: absY - CORE_Y,
-    };
+export const getAbsPosition = (style: PositionStyle): AbsolutePosition => {
+  const topPct = parseFloat(style.top);
+  const leftPct = parseFloat(style.left);
+  const absX = (leftPct / 100) * VIEWBOX_W;
+  const absY = (topPct / 100) * VIEWBOX_H;
+
+  return {
+    absX,
+    absY,
+    relX: absX - CORE_X,
+    relY: absY - CORE_Y,
+  };
 };
 
     // export const fanningPaths = topSkills.map((skill, index) => {

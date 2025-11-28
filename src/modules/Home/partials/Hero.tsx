@@ -24,7 +24,7 @@ const Hero = () => {
             <div className="space-y-4">
               {/* Pre-title: Maintained size but ensure good tracking and display font */}
               <p className="text-primary text-xl font-display tracking-widest uppercase">
-                Hello, I'm Moniruzzaman —
+                Hello, I'm Mahammad —
               </p>
 
               {/* H1: Significantly increased size for maximum impact */}

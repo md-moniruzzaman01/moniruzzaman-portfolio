@@ -134,6 +134,15 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* Add this CSS */
+.letter {
+  display: inline-block;
+}
+
+.letter.indigo {
+  color: #6366f1; /* matches your text-indigo-400 */
+}
+
 /* @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }

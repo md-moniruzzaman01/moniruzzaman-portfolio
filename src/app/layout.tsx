@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@widgets/navbar";
 import Footer from "@widgets/footer";
+import Script from "next/script";
+import AnimationsRunner from "@widgets/animation/AnimationRunner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -92,14 +94,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#080A14] `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#080A14] relative `}
       >
         {/* Navbar included on all pages */}
         <Navbar />
 
         {/* Page content */}
-        <main>{children}</main>
-
+        <main id="main">{children}</main>
+        <div
+          id="cursor"
+          style={{
+            position: "fixed",
+            width: "20px",
+            height: "20px",
+            backgroundColor: "#FFFFE0",
+            borderRadius: "50%",
+            pointerEvents: "none",
+            top: 0,
+            left: 0,
+            zIndex: 9999,
+            transform: "translate(-50%, -50%)",
+          }}
+        />
+        <AnimationsRunner />
         {/* Footer included on all pages */}
         <Footer />
       </body>

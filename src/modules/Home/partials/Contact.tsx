@@ -35,19 +35,39 @@ const InfoCard: React.FC<{
   icon: React.ReactNode;
 }> = ({ children, className, icon }) => (
   <div
-    className={`p-6 flex gap-4 rounded-xl border ${BORDER_COLOR} ${CARD_BG} transition-all duration-300 hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-500/10 ${className}`}
+    className={`
+      p-5 sm:p-6 
+      flex flex-col sm:flex-row 
+      gap-4 sm:gap-5 
+      rounded-xl border 
+      ${BORDER_COLOR} ${CARD_BG}
+      transition-all duration-300 
+      hover:border-indigo-500/50 
+      hover:shadow-2xl hover:shadow-indigo-500/10 
+      ${className}
+    `}
   >
+    {/* ICON WRAPPER */}
     <div
-      className={`p-3 rounded-xl ${ACCENT_BG.replace(
-        "bg-",
-        "bg-"
-      )}/10 flex-shrink-0`}
+      className={`
+        p-3 sm:p-4 
+        rounded-xl 
+        ${ACCENT_BG}/10 
+        flex-shrink-0 
+        flex items-center justify-center
+        text-xl sm:text-2xl
+      `}
     >
       {icon}
     </div>
-    <div>{children}</div>
+
+    {/* CONTENT */}
+    <div className="text-sm sm:text-base leading-relaxed">
+      {children}
+    </div>
   </div>
 );
+
 
 // --- CONTACT DATA ---
 const emailAddress = "dev.moniruzzaman@gmail.com";
@@ -72,10 +92,10 @@ const Contact = () => {
           >
             Partner with a Specialist
           </p>
-          <h2 className="text-4xl md:text-6xl font-extrabold leading-tight text-gray-50">
+          <h2 className="text-3xl md:text-6xl font-extrabold leading-tight text-gray-50 textZoom">
             Ready to Scale Your Business?
           </h2>
-          <p className={`${MUTED_COLOR} max-w-3xl mx-auto text-lg pt-2`}>
+          <p className={`${MUTED_COLOR} max-w-3xl mx-auto text-lg pt-2 textZoom`}>
             I build high-conversion, scalable web applications that drive real
             business results. Let's discuss how modern development can
             accelerate your growth.
@@ -94,7 +114,7 @@ const Contact = () => {
               >
                 Let’s Talk Strategy
               </p>
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-100">
+              <h3 className="text-2xl md:text-4xl font-bold text-gray-100 textZoom wrap-break-word">
                 Schedule Your Free Consultation
               </h3>
               <p
@@ -109,11 +129,11 @@ const Contact = () => {
 
             <div className="grid md:grid-cols-2 gap-4 pt-6">
               {/* EMAIL */}
-              <InfoCard icon={<Mail className={`w-6 h-6 ${ACCENT_COLOR}`} />}>
-                <p className="text-sm text-gray-500">Email</p>
+              <InfoCard icon={<Mail className={`w-6 h-6  ${ACCENT_COLOR}`} />}>
+                <p className="text-sm text-gray-500 ">Email</p>
                 <a
                   href={`mailto:${emailAddress}`}
-                  className={`font-semibold text-gray-100 hover:${ACCENT_COLOR} transition-colors text-lg`}
+                  className={`font-semibold text-gray-100 hover:${ACCENT_COLOR} transition-colors text-lg wrap-anywhere`}
                 >
                   {emailAddress}
                 </a>
@@ -143,7 +163,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* RIGHT — HIGH-IMPACT CTA BOX (2/5 width on large screens) */}
           <div className="lg:col-span-2 flex justify-center lg:justify-end w-full">
             <div
               className={`
@@ -154,7 +173,7 @@ const Contact = () => {
                         transform hover:scale-[1.02] transition-transform duration-500
                     `}
             >
-              {/* Subtle background glow effect */}
+            
               <div className="absolute inset-0 rounded-2xl opacity-50 blur-xl bg-indigo-900/50 -z-10" />
 
               <div className="space-y-4">
@@ -173,7 +192,7 @@ const Contact = () => {
                                 ${ACCENT_BG} text-white 
                                 hover:bg-indigo-500 
                                 shadow-lg shadow-indigo-500/40 
-                                transform hover:translate-y-[-2px]
+                                transform hover:translate-y-[-2px] float-btn
                             `}
               >
                 Book a Free Strategy Meeting
