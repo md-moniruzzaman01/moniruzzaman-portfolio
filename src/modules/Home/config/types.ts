@@ -5,10 +5,10 @@ export type PositionStyle ={
 }
 
 export type AbsolutePosition ={
-    absX: number;
-    absY: number;
-    relX: number;
-    relY: number;
+  absX: number;
+  absY: number;
+  relX: number;
+  relY: number;
 }
 
 export type SkillIconProps ={
@@ -22,6 +22,7 @@ export type OrbitingGlyphProps ={
     style: PositionStyle;
 }
 
-export type SkillOrbitV2Props ={
+export type SkillOrbitProps ={
     isBackground?: boolean; // New prop for conditional rendering
 }
+
