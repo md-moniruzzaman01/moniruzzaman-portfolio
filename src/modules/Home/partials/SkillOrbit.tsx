@@ -1,13 +1,29 @@
 "use client";
 
-import { CORE_X, CORE_Y, ICON_COLOR_MAP, ICON_MAP, topSkills, VIEWBOX_H, VIEWBOX_W } from "../config/constaints";
-import { OrbitingGlyphProps, PositionStyle, SkillIconProps, SkillOrbitProps } from "../config/types";
+import {
+  CORE_X,
+  CORE_Y,
+  ICON_COLOR_MAP,
+  ICON_MAP,
+  topSkills,
+  VIEWBOX_H,
+  VIEWBOX_W,
+} from "../config/constaints";
+import {
+  OrbitingGlyphProps,
+  PositionStyle,
+  SkillIconProps,
+  SkillOrbitProps,
+} from "../config/types";
 import { getAbsPosition } from "../helpers/OrbitLogic";
 
-
-const SkillIcon: React.FC<SkillIconProps> = ({ name, size = "w-10 h-10", style }) => {
+const SkillIcon: React.FC<SkillIconProps> = ({
+  name,
+  size = "w-10 h-10",
+  style,
+}) => {
   const IconComponent = ICON_MAP[name];
- const iconColor = ICON_COLOR_MAP[name] || "#fff";
+  const iconColor = ICON_COLOR_MAP[name] || "#fff";
   return (
     <div
       className={`absolute ${size} flex items-center justify-center rounded-full text-white shadow-lg
@@ -15,14 +31,16 @@ const SkillIcon: React.FC<SkillIconProps> = ({ name, size = "w-10 h-10", style }
       style={style}
     >
       {IconComponent ? (
-        <IconComponent className="w-full h-full" style={{ color: iconColor }} />
+        <IconComponent
+          className="w-full h-full scale-100 hover:scale-125"
+          style={{ color: iconColor }}
+        />
       ) : (
         <span>{name}</span>
       )}
     </div>
   );
 };
-
 
 export const SkillOrbit: React.FC<SkillOrbitProps> = () => {
   // 2. ORBITING ICONS (Icons that need to move)
@@ -272,7 +290,6 @@ export const SkillOrbit: React.FC<SkillOrbitProps> = () => {
     </section>
   );
 };
-
 
 export const OrbitingGlyph: React.FC<OrbitingGlyphProps> = ({
   name,
