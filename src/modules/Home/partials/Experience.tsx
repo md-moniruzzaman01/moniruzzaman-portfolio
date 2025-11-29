@@ -59,7 +59,7 @@ const Experience = () => {
             Proven Development Background
           </p>
           <h2 className="text-4xl md:text-5xl font-display font-bold textZoom">
-            10+ Years of Web Development Experience
+            4+ Years of Web Development Experience
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto textZoom">
             I specialize in designing, developing, and deploying robust{" "}
