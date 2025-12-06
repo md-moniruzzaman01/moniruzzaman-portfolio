@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   description:
     "Full-stack web developer specializing in Next.js, React, Tailwind, Prisma, and scalable backend systems. I build high-performance websites and modern web applications that help businesses grow, improve user experience, and elevate their digital presence.",
 
+      verification: {
+    google: "JAnfOTFiveqsBJr7MrFSUP8wm0VwTYqcQJ0-_cTfXTU",
+  },
   // Keywords targeting NYC small business owners
   keywords: [
     "Moniruzzaman",
@@ -83,7 +86,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
-  },
+  }
 };
 
 export default function RootLayout({
