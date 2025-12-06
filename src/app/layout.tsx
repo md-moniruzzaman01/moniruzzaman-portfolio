@@ -18,11 +18,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   // SEO-friendly, benefit-driven title
-  title: "Moniruzzaman | Web Developer for Small Business Solutions",
+  title: "Moniruzzaman | Full-Stack Developer Building Fast, Modern Web Apps",
 
   // Punchy, local SEO optimized description
   description:
-    "Full-stack web developer in NYC helping small businesses create professional websites and grow online. Projects are built with React and Next.js to improve visibility, drive results, and strengthen online presence.",
+    "Full-stack web developer specializing in Next.js, React, Tailwind, Prisma, and scalable backend systems. I build high-performance websites and modern web applications that help businesses grow, improve user experience, and elevate their digital presence.",
 
   // Keywords targeting NYC small business owners
   keywords: [
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
 
   // Open Graph (Facebook, LinkedIn)
   openGraph: {
-    title: "Moniruzzaman | Web Developer for Small Business Solutions",
+    title: "Moniruzzaman | Full-Stack Developer Building Fast, Modern Web Apps",
     description:
-      "Full-stack web developer in NYC helping small businesses create professional websites and grow online. Projects are built with React and Next.js to improve visibility, drive results, and strengthen online presence.",
+      "Full-stack web developer specializing in Next.js, React, Tailwind, Prisma, and scalable backend systems. I build high-performance websites and modern web applications that help businesses grow, improve user experience, and elevate their digital presence.",
     url: "https://dev-moniruzzaman.vercel.app/",
     siteName: "Moniruzzaman Portfolio",
     images: [
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Moniruzzaman | Web Developer for Small Business Solutions",
+    title: "Moniruzzaman | Full-Stack Developer Building Fast, Modern Web Apps",
     description:
-      "Full-stack web developer in NYC helping small businesses create professional websites and grow online. Projects are built with React and Next.js to improve visibility, drive results, and strengthen online presence.",
+      "Full-stack web developer specializing in Next.js, React, Tailwind, Prisma, and scalable backend systems. I build high-performance websites and modern web applications that help businesses grow, improve user experience, and elevate their digital presence.",
     site: "@dev_moniruzaman", // Optional
     creator: "@dev_moniruzaman", // Optional
     images: ["https://dev-moniruzzaman.vercel.app/moniruzzaman.png"],
