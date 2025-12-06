@@ -15,7 +15,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 export const metadata: Metadata = {
   // SEO-friendly, benefit-driven title
   title: "Moniruzzaman | Full-Stack Developer Building Fast, Modern Web Apps",
@@ -83,6 +82,9 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+    verification: {
+    google: "JAnfOTFiveqsBJr7MrFSUP8wm0VwTYqcQJ0-_cTfXTU", 
   },
 };
 
