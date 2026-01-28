@@ -1,6 +1,6 @@
 import About from "./partials/About";
 import Services from "./partials/Services";
-import Portfolio from "./partials/portfolio";
+import Portfolio from "../../assets/portfolio";
 import Experience from "./partials/Experience";
 import Contact from "./partials/Contact";
 import HeroSection from "./partials/HeroSection";

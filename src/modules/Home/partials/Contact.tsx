@@ -1,7 +1,8 @@
 "use client";
 
-import React from "react";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
+import { PopupButton } from "react-calendly";
 
 // --- Theme and Styles (Dark Mode, Vibrant Accent) ---
 const ACCENT_COLOR = "text-indigo-400";
@@ -62,32 +63,31 @@ const InfoCard: React.FC<{
     </div>
 
     {/* CONTENT */}
-    <div className="text-sm sm:text-base leading-relaxed">
-      {children}
-    </div>
+    <div className="text-sm sm:text-base leading-relaxed">{children}</div>
   </div>
 );
-
 
 // --- CONTACT DATA ---
 const emailAddress = "dev.moniruzzaman@gmail.com";
 const phone = "+88 01618396301";
-const meetingLink = "#schedule-meeting"; // Placeholder for meeting scheduling link
-
+const meetingLink = "https://calendly.com/dev-moniruzzaman/30min";
 // --- CONTACT COMPONENT ---
 const Contact = () => {
+  const [mounted, setMounted] = useState(false);
+
+  // This ensures code runs only on the client
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   return (
-    <section
-      id="contact"
-      className={`py-24 px-6  ${FOREGROUND_COLOR}`}
-    >
+    <section id="contact" className={`py-24 px-6  ${FOREGROUND_COLOR}`}>
       <div className="container mx-auto max-w-7xl">
         {/* HEADER */}
         <div className="text-center mb-16 space-y-4">
           <p
             className={`${ACCENT_COLOR.replace(
               "text-",
-              "text-"
+              "text-",
             )} text-sm tracking-widest uppercase font-mono`}
           >
             Partner with a Specialist
@@ -95,7 +95,9 @@ const Contact = () => {
           <h2 className="text-3xl md:text-6xl font-extrabold leading-tight text-gray-50 textZoom">
             Ready to Scale Your Business?
           </h2>
-          <p className={`${MUTED_COLOR} max-w-3xl mx-auto text-lg pt-2 textZoom`}>
+          <p
+            className={`${MUTED_COLOR} max-w-3xl mx-auto text-lg pt-2 textZoom`}
+          >
             I build high-conversion, scalable web applications that drive real
             business results. Let's discuss how modern development can
             accelerate your growth.
@@ -109,7 +111,7 @@ const Contact = () => {
               <p
                 className={`${ACCENT_COLOR.replace(
                   "text-",
-                  "text-"
+                  "text-",
                 )} text-sm tracking-widest uppercase font-mono`}
               >
                 Let’s Talk Strategy
@@ -157,7 +159,7 @@ const Contact = () => {
               >
                 <p className="text-sm text-gray-500">Location</p>
                 <p className="font-semibold text-gray-100 text-lg">
-                  BD  — Serving All Boroughs, Remote First
+                  BD — Serving All Boroughs, Remote First
                 </p>
               </InfoCard>
             </div>
@@ -173,7 +175,6 @@ const Contact = () => {
                         transform hover:scale-[1.02] transition-transform duration-500
                     `}
             >
-            
               <div className="absolute inset-0 rounded-2xl opacity-50 blur-xl bg-indigo-900/50 -z-10" />
 
               <div className="space-y-4">
