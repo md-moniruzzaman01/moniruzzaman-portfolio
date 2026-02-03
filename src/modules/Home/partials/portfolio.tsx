@@ -3,24 +3,14 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { gsap } from "gsap";
-import { Layers, X, ExternalLink, Hash, Github, Zap } from "lucide-react";
+import { Layers, X} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // import ecommarceImg from "../../../assets/Ecommerce Website.png";
-import ecommarceDashboardImg from "../assets/ecommerce dashboard.png";
-import swiftEducation from "../assets/swift education.png";
-import arborConnect1 from "../assets/arborConnect1.png";
-import arborConnect2 from "../assets/arborConnect2.png";
-import ecommarceImg from "../assets/Ecommerce Website.png";
-import RepairNest from "../assets/repair nest.jpg";
-import NexDesign from "../assets/next design.jpg";
-import SwiftEducationDashboard from "../assets/swift education Dashboard.png";
-import RepairMS1 from "../assets/repairMS1.png";
-import RepairMS2 from "../assets/repairMS2.png";
-import RepairMS3 from "../assets/repairMS3.png";
-import inventoryMSImg from "../assets/abcIMS1.png";
-import inventoryMS1 from "../assets/abcIMS2.png";
-import inventoryMS2 from "../assets/abcIMS3.png";
+import swiftEducation from "../../../assets/swift education.png";
+import NexDesign from "../../../assets/next design.jpg";
+import SwiftEducationDashboard from "../../../assets/swift education Dashboard.png";
+
 // --- Types ---
 interface Project {
   id: number;
