@@ -56,41 +56,10 @@ interface Project {
 
 // --- Project Data ---
 const projectsData: Project[] = [
+
+
   {
     id: 1,
-    title: "Repair Nest",
-    category: "Full-Stack Development",
-    description:
-      "A smart repair & logistics management platform that digitizes the full repair lifecycle — from device drop-off to delivery-ready — with real-time tracking and automated communication.",
-
-    image: RepairNest,
-    gallery: [RepairNest],
-
-    preview: "https://pc-store-nu.vercel.app/",
-    github: "",
-
-    tech: {
-      frontend: "Next.js, TypeScript, Tailwind CSS",
-      backend: "Node.js, Express.js",
-      database: "PostgreSQL, Prisma ORM",
-    },
-
-    details: {
-      mission:
-        "Bring transparency, speed, and digital control to repair centers by replacing manual workflows with a modern web platform.",
-
-      challenges:
-        "Manual tracking, delayed updates, missed follow-ups, and poor customer visibility across multi-branch repair operations.",
-
-      summary:
-        "Repair Nest streamlines repair operations with real-time order tracking, pickup requests, automated emails, and multi-branch management — all in one scalable full-stack system.",
-    },
-
-    initialPos: { top: "12%", left: "8%", rotate: -4 },
-  },
-
-  {
-    id: 2,
     title: "NEX Design",
     category: "Front-End",
     description:
@@ -155,147 +124,249 @@ const projectsData: Project[] = [
     },
 
     initialPos: { top: "52%", left: "2%", rotate: -2 },
-  },
-
-  {
-    id: 4,
-    title: "Repair Management System",
-    category: "Full-Stack Development",
-    description:
-      "An enterprise-grade repair & logistics management system that tracks devices across every stage — from complaint to delivery — with Jira-style workflow automation and deep operational analytics.",
-
-    image: RepairMS1,
-    gallery: [RepairMS1, RepairMS2, RepairMS3],
-
-    preview: "https://softwara-wms.netlify.app",
-    github: undefined,
-
-    tech: {
-      frontend: "Next.js, TypeScript, Tailwind CSS",
-      backend: "Node.js, Express.js",
-      database: "PostgreSQL, Prisma ORM",
-      motion: "—",
-    },
-
-    details: {
-      mission:
-        "Digitize large-scale IT repair operations by replacing manual tracking with a transparent, step-based workflow system.",
-
-      challenges:
-        "Managing complex repair lifecycles, multi-branch logistics, role-based access, billing, and real-time process visibility at scale.",
-
-      summary:
-        "This system functions like Jira for hardware repairs — tracking complaints, QC, repair, parts, QA, and delivery while providing analytics, billing, and branch-level control.",
-    },
-
-    initialPos: { top: "48%", left: "28%", rotate: 5 },
-  },
-
-  {
-    id: 5,
-    title: "Aebor Conncet Service Platform",
-    category: "Service Websites",
-    description:
-      "A local SEO-focused service platform designed to convert visitors into leads.",
-
-    image: arborConnect1,
-    gallery: [arborConnect1, arborConnect2],
-
-    preview: "https://arbor-connect.vercel.app",
-    github: "",
-
-    tech: {
-      frontend: "Next.js / Tailwind CSS",
-      backend: "Server Actions",
-      database: "—",
-    },
-
-    details: {
-      mission:
-        "Help a local service business generate consistent leads through SEO and performance.",
-      challenges:
-        "Optimizing for local search visibility while keeping the site fast and conversion-focused.",
-      summary:
-        "The website improved local rankings and lead generation with a clean, scalable structure.",
-    },
-
-    initialPos: { top: "48%", left: "68%", rotate: 4 },
-  },
-  {
-    id: 6,
-    title: "PC Store",
-    category: "Full-Stack Development",
-    description:
-      "A modern PC & components eCommerce platform with a high-performance storefront and a powerful admin dashboard for product, order, and inventory management.",
-
-    image: ecommarceImg,
-    gallery: [ecommarceImg, ecommarceDashboardImg],
-
-    preview: "https://pc-store.vercel.app",
-    github: undefined,
-
-    tech: {
-      frontend: "Next.js, TypeScript, Tailwind CSS",
-      backend: "Node.js",
-      database: "PostgreSQL",
-      motion: "—",
-    },
-
-    details: {
-      mission:
-        "Build a fast, scalable eCommerce platform for selling PC hardware with full control over products, orders, and inventory.",
-
-      challenges:
-        "Managing complex product data, ensuring smooth admin workflows, and delivering a fast, SEO-friendly shopping experience.",
-
-      summary:
-        "PC Store combines a Next.js storefront with a React-based admin dashboard to deliver a complete, scalable eCommerce solution for PC retailers.",
-    },
-
-    initialPos: {
-      top: "65%",
-      left: "48%",
-      rotate: 7,
-    },
-  },
-  {
-    id: 7,
-    title: "Inventory & Shipment Management System",
-    category: "Full-Stack Development",
-    description:
-      "A warehouse and inventory system built for logistics middlemen to track shipments from principals, verify received goods, and distribute parts to requesting clients.",
-
-    image: inventoryMSImg,
-    gallery: [inventoryMSImg, inventoryMS1, inventoryMS2],
-
-    preview: "https://abc-warehouse.netlify.app/",
-    github: undefined,
-
-    tech: {
-      frontend: "Next.js, TypeScript, Tailwind CSS",
-      backend: "Node.js, Express.js",
-      database: "PostgreSQL, Prisma ORM",
-      motion: "—",
-    },
-
-    details: {
-      mission:
-        "Provide complete visibility and control over inbound shipments, warehouse stock, and outbound client deliveries.",
-
-      challenges:
-        "Matching principal shipment lists with received items, preventing stock mismatches, and coordinating multi-party logistics flows.",
-
-      summary:
-        "This system enables middleman businesses to reconcile shipments, manage warehouse inventory, and fulfill client requests with accurate tracking and records.",
-    },
-
-    initialPos: {
-      top: "10%",
-      left: "76%",
-      rotate: 6,
-    },
-  },
+  }
 ];
+// const projectsData: Project[] = [
+//   {
+//     id: 1,
+//     title: "Repair Nest",
+//     category: "Full-Stack Development",
+//     description:
+//       "A smart repair & logistics management platform that digitizes the full repair lifecycle — from device drop-off to delivery-ready — with real-time tracking and automated communication.",
+
+//     image: RepairNest,
+//     gallery: [RepairNest],
+
+//     preview: "https://pc-store-nu.vercel.app/",
+//     github: "",
+
+//     tech: {
+//       frontend: "Next.js, TypeScript, Tailwind CSS",
+//       backend: "Node.js, Express.js",
+//       database: "PostgreSQL, Prisma ORM",
+//     },
+
+//     details: {
+//       mission:
+//         "Bring transparency, speed, and digital control to repair centers by replacing manual workflows with a modern web platform.",
+
+//       challenges:
+//         "Manual tracking, delayed updates, missed follow-ups, and poor customer visibility across multi-branch repair operations.",
+
+//       summary:
+//         "Repair Nest streamlines repair operations with real-time order tracking, pickup requests, automated emails, and multi-branch management — all in one scalable full-stack system.",
+//     },
+
+//     initialPos: { top: "12%", left: "8%", rotate: -4 },
+//   },
+
+//   {
+//     id: 2,
+//     title: "NEX Design",
+//     category: "Front-End",
+//     description:
+//       "A bold, animation-driven agency website migrated from Webflow to Next.js, featuring pixel-perfect design and cinematic GSAP motion.",
+
+//     image: NexDesign,
+//     gallery: [],
+
+//     preview: "https://nexdesign-ten.vercel.app",
+//     github: "",
+
+//     tech: {
+//       frontend: "Next.js, React, Tailwind CSS",
+//       backend: "—",
+//       database: "—",
+//       motion: "GSAP",
+//     },
+
+//     details: {
+//       mission:
+//         "Transform a Webflow design into a high-performance Next.js site with flawless animations and zero visual compromise.",
+
+//       challenges:
+//         "Rebuilding complex Webflow interactions in GSAP, preserving Figma-perfect layouts, and optimizing heavy animations for smooth performance.",
+
+//       summary:
+//         "NEX Design delivers a cinematic, high-impact web experience using GSAP timelines, scroll-based motion, and a scalable Next.js architecture.",
+//     },
+
+//     initialPos: { top: "18%", left: "48%", rotate: 3 },
+//   },
+
+//   {
+//     id: 3,
+//     title: "Swift Educations",
+//     category: "Full-Stack Development",
+//     description:
+//       "A skill-based certification & RPL platform that helps professionals turn real-world experience into globally recognized qualifications.",
+
+//     image: swiftEducation,
+//     gallery: [swiftEducation, SwiftEducationDashboard],
+
+//     preview: "https://swift-education.vercel.app/",
+//     github: "",
+
+//     tech: {
+//       frontend: "Next.js, React, Tailwind CSS",
+//       backend: "Node.js, Express.js",
+//       database: "PostgreSQL, Prisma ORM",
+//       motion: "—",
+//     },
+
+//     details: {
+//       mission:
+//         "Enable skilled professionals to earn certification through experience, not just formal degrees.",
+
+//       challenges:
+//         "Lack of formal credentials, complex RPL workflows, document-heavy applications, and manual admin processes.",
+
+//       summary:
+//         "Swift Educations delivers a full RPL certification system with eligibility requests, admin dashboards, document control, and automated communication.",
+//     },
+
+//     initialPos: { top: "52%", left: "2%", rotate: -2 },
+//   },
+
+//   {
+//     id: 4,
+//     title: "Repair Management System",
+//     category: "Full-Stack Development",
+//     description:
+//       "An enterprise-grade repair & logistics management system that tracks devices across every stage — from complaint to delivery — with Jira-style workflow automation and deep operational analytics.",
+
+//     image: RepairMS1,
+//     gallery: [RepairMS1, RepairMS2, RepairMS3],
+
+//     preview: "https://softwara-wms.netlify.app",
+//     github: undefined,
+
+//     tech: {
+//       frontend: "Next.js, TypeScript, Tailwind CSS",
+//       backend: "Node.js, Express.js",
+//       database: "PostgreSQL, Prisma ORM",
+//       motion: "—",
+//     },
+
+//     details: {
+//       mission:
+//         "Digitize large-scale IT repair operations by replacing manual tracking with a transparent, step-based workflow system.",
+
+//       challenges:
+//         "Managing complex repair lifecycles, multi-branch logistics, role-based access, billing, and real-time process visibility at scale.",
+
+//       summary:
+//         "This system functions like Jira for hardware repairs — tracking complaints, QC, repair, parts, QA, and delivery while providing analytics, billing, and branch-level control.",
+//     },
+
+//     initialPos: { top: "48%", left: "28%", rotate: 5 },
+//   },
+
+//   {
+//     id: 5,
+//     title: "Aebor Conncet Service Platform",
+//     category: "Service Websites",
+//     description:
+//       "A local SEO-focused service platform designed to convert visitors into leads.",
+
+//     image: arborConnect1,
+//     gallery: [arborConnect1, arborConnect2],
+
+//     preview: "https://arbor-connect.vercel.app",
+//     github: "",
+
+//     tech: {
+//       frontend: "Next.js / Tailwind CSS",
+//       backend: "Server Actions",
+//       database: "—",
+//     },
+
+//     details: {
+//       mission:
+//         "Help a local service business generate consistent leads through SEO and performance.",
+//       challenges:
+//         "Optimizing for local search visibility while keeping the site fast and conversion-focused.",
+//       summary:
+//         "The website improved local rankings and lead generation with a clean, scalable structure.",
+//     },
+
+//     initialPos: { top: "48%", left: "68%", rotate: 4 },
+//   },
+//   {
+//     id: 6,
+//     title: "PC Store",
+//     category: "Full-Stack Development",
+//     description:
+//       "A modern PC & components eCommerce platform with a high-performance storefront and a powerful admin dashboard for product, order, and inventory management.",
+
+//     image: ecommarceImg,
+//     gallery: [ecommarceImg, ecommarceDashboardImg],
+
+//     preview: "https://pc-store.vercel.app",
+//     github: undefined,
+
+//     tech: {
+//       frontend: "Next.js, TypeScript, Tailwind CSS",
+//       backend: "Node.js",
+//       database: "PostgreSQL",
+//       motion: "—",
+//     },
+
+//     details: {
+//       mission:
+//         "Build a fast, scalable eCommerce platform for selling PC hardware with full control over products, orders, and inventory.",
+
+//       challenges:
+//         "Managing complex product data, ensuring smooth admin workflows, and delivering a fast, SEO-friendly shopping experience.",
+
+//       summary:
+//         "PC Store combines a Next.js storefront with a React-based admin dashboard to deliver a complete, scalable eCommerce solution for PC retailers.",
+//     },
+
+//     initialPos: {
+//       top: "65%",
+//       left: "48%",
+//       rotate: 7,
+//     },
+//   },
+//   {
+//     id: 7,
+//     title: "Inventory & Shipment Management System",
+//     category: "Full-Stack Development",
+//     description:
+//       "A warehouse and inventory system built for logistics middlemen to track shipments from principals, verify received goods, and distribute parts to requesting clients.",
+
+//     image: inventoryMSImg,
+//     gallery: [inventoryMSImg, inventoryMS1, inventoryMS2],
+
+//     preview: "https://abc-warehouse.netlify.app/",
+//     github: undefined,
+
+//     tech: {
+//       frontend: "Next.js, TypeScript, Tailwind CSS",
+//       backend: "Node.js, Express.js",
+//       database: "PostgreSQL, Prisma ORM",
+//       motion: "—",
+//     },
+
+//     details: {
+//       mission:
+//         "Provide complete visibility and control over inbound shipments, warehouse stock, and outbound client deliveries.",
+
+//       challenges:
+//         "Matching principal shipment lists with received items, preventing stock mismatches, and coordinating multi-party logistics flows.",
+
+//       summary:
+//         "This system enables middleman businesses to reconcile shipments, manage warehouse inventory, and fulfill client requests with accurate tracking and records.",
+//     },
+
+//     initialPos: {
+//       top: "10%",
+//       left: "76%",
+//       rotate: 6,
+//     },
+//   },
+// ];
 
 const Portfolio: React.FC = () => {
   const [filter, setFilter] = useState("All");
