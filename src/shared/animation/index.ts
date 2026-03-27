@@ -165,7 +165,7 @@ export function initAnimations() {
   tl.from("nav ul li", {
     y: -30,
     direction: 0.5,
-    delay: 1,
+    delay: 0.5,
     opacity: 0,
     stagger: 0.15,
   });

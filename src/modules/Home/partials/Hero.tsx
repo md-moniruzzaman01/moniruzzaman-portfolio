@@ -69,47 +69,7 @@ const Hero = () => {
               {/* Inner container to hold the image and its internal tech background */}
               <div className="relative rounded-[1.7rem] overflow-hidden ">
                 {/* 🚀 Tech background behind the person (This is what shows through the transparent areas) */}
-                <div className="absolute inset-0 bg-charcoal-light flex items-center justify-center p-4">
-                  <div className="w-full h-full bg-gradient-to-br from-gray-900 to-black rounded-lg p-4 grid grid-cols-2 gap-2 text-blue-300 text-xs font-mono opacity-80">
-                    <pre className="self-start leading-snug">
-                      {`
-// Server Logic
-const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-function startServer() {
-  console.log("Initializing API endpoints...");
-  app.listen(PORT, () => {
-    console.log("Server running on port: " + PORT);
-  });
-}
-
-// Data Handling
-const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.DB_URI);
-    console.log("MongoDB Connected!");
-  } catch (err) {
-    console.error("DB Connection Failed: " + err.message);
-    process.exit(1);
-  }
-};
-
-startServer();
-connectDB();
-                      `}
-                    </pre>
-                    <pre className="self-end text-right">
-                      {`
-<Route path="/" />
-<Component />
-class App { /* ... */ }
-return <Dashboard />
-</div>`}
-                    </pre>
-                  </div>
-                </div>
+ 
 
                 <Image
                   // 🔥 This image must be a PNG with a transparent background!
