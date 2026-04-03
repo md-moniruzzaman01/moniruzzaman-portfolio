@@ -13,7 +13,7 @@ const HeroSection = () => {
 
   return (
 
-    <section id="hero-container" className="relative min-h-[90vh] py-24 md:py-36 overflow-hidden  text-white">
+    <section id="hero-container" className="relative min-h-[60vh] md:min-h-[90vh] py-24 md:py-36 overflow-hidden  text-white">
       {/* 1. Massive Background Text Overlay (Low Opacity) */}
 
       <div className="absolute top-1/2  -translate-y-1/2 whitespace-nowrap opacity-[0.03] pointer-events-none z-0">

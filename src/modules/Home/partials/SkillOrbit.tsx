@@ -26,7 +26,7 @@ const SkillIcon: React.FC<SkillIconProps> = ({
   const iconColor = ICON_COLOR_MAP[name] || "#fff";
   return (
     <div
-      className={`absolute ${size} flex items-center justify-center rounded-full text-white shadow-lg
+      className={`absolute ${size} hidden md:flex items-center justify-center rounded-full text-white shadow-lg
                   transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300`}
       style={style}
     >
@@ -266,7 +266,7 @@ export const SkillOrbit: React.FC<SkillOrbitProps> = () => {
           <div
             className="absolute w-32 h-32 md:w-40 md:h-40 rounded-full flex items-center justify-center z-10 
                                      border-4 border-indigo-600/50 
-                                     shadow-xl shadow-yellow-400"
+                                     shadow-xl shadow-yellow-400 opacity-50 md:opacity-100"
             style={{
               top: (CORE_Y / VIEWBOX_H) * 100 + "%",
               left: (CORE_X / VIEWBOX_W) * 100 + "%",
