@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { gsap } from "gsap";
-import { Layers, X} from "lucide-react";
+import { Layers, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // import ecommarceImg from "../../../assets/Ecommerce Website.png";
@@ -28,7 +28,10 @@ import inventoryMS2 from "../../../assets/abcIMS3.png";
 interface Project {
   id: number;
   title: string;
-  category: "Front-End Development" | "Full-Stack Development" | "Service Websites";
+  category:
+    | "Front-End Development"
+    | "Full-Stack Development"
+    | "Service Websites";
   description: string;
 
   image: StaticImageData;
@@ -56,7 +59,6 @@ interface Project {
     rotate: number;
   };
 }
-
 
 const projectsData: Project[] = [
   {
@@ -107,7 +109,8 @@ const projectsData: Project[] = [
 
     tech: {
       frontend: "React, Tailwind CSS,redux Socket.io, TypeScript",
-      backend: "Node.js, Express.js, jwt, Prisma, TypeScript, Socket.io,ZKTeco SDK, Nodemailer",
+      backend:
+        "Node.js, Express.js, jwt, Prisma, TypeScript, Socket.io,ZKTeco SDK, Nodemailer",
       database: "Postgres",
       motion: "",
     },
@@ -492,12 +495,10 @@ const Portfolio: React.FC = () => {
                     {/* Paper Card */}
                     <div
                       className="bg-zinc-100 p-3 pb-8 shadow-xl border-r border-b border-black/10 
-                /* 1. Fix jagged edges during transform */
                 will-change-transform transform-gpu 
                 transition-transform duration-300 ease-out
-                group-hover:scale-[1.02] 
-                /* 2. Improve sub-pixel font rendering */
-                antialiased backface-hidden"
+                group-hover:scale-[1.02]
+                antialiased backface-hidden m-2"
                     >
                       <div className="aspect-video bg-zinc-300 relative mb-3 overflow-hidden shadow-inner">
                         {project.image ? (
